@@ -1,0 +1,15 @@
+.home-feature-list {
+    margin-bottom: 70px;
+    background-color: #dbf0ff;
+    text-align: center;
+    @media screen and(min-width:720px) {
+        text-align: left;
+    }
+    > :nth-child(even) {
+        .wrapper {
+            @media screen and(min-width:720px) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}

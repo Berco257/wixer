@@ -1,0 +1,43 @@
+.sidebar-add-component {
+    box-shadow: 0 1px 1px 0 #0000002e;
+    .element-items {
+        grid-template-columns: repeat(2, 50%);
+        gap: 5px;
+        display: grid;
+        .side-bar-item {
+            flex-grow: 1;
+            margin-top: 0;
+            height: unset;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .header-items {
+        .side-bar-item {
+            padding: 0;
+        }
+        img {
+            object-fit: cover;
+            height: 40px;
+            object-position: left;
+            border-radius: 3px;
+        }
+    }
+    .section-items {
+        .side-bar-item {
+            padding: 0;
+        }
+        img {
+            border-radius: 3px;
+        }
+    }
+    .footer-items {
+        .side-bar-item {
+            padding: 0;
+        }
+        img {
+            border-radius: 3px;
+        }
+    }
+}

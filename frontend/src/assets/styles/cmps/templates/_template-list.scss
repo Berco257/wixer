@@ -1,0 +1,27 @@
+.template-list {
+    padding-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 25px;
+    h2 {
+        margin-bottom: 0;
+        font-family: montserrat-medium;
+        font-weight: 400;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-inline: auto;
+        @media screen and (min-width: 570px) {
+            margin-bottom: 70px;
+        }
+    }
+    .MuiImageList-root {
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 40px !important;
+        @media screen and (min-width: 570px) {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+        @media screen and (min-width: 720px) {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}

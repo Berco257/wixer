@@ -1,0 +1,48 @@
+.site-name-modal {
+    h2,
+    p {
+        margin: 0;
+    }
+    padding: 30px 32px;
+    gap: 25px;
+    background-color: #fafafa;
+}
+.site-saved-modal {
+    max-width: 450px;
+    h2,
+    p {
+        margin: 0;
+    }
+    .close-btn {
+        cursor: pointer;
+    }
+    padding: 30px 32px;
+    gap: 25px;
+    .modal-link {
+        display: block;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background-color: #d27519;
+        color: #ffffff;
+        text-decoration: none;
+        padding-block: 10px;
+        padding-inline: 18px;
+        border-radius: 5px;
+        &.dashboard {
+            background-color: #1976d2;
+            &:hover {
+                background-color: #145ca4;
+            }
+        }
+        &:hover {
+            background-color: #a45c14;
+        }
+    }
+    .actions {
+        @media screen and (max-width: 720px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+    }
+}

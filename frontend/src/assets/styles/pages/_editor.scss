@@ -1,0 +1,60 @@
+.editor {
+    display: none;
+    flex-direction: row;
+    margin-bottom: -110px;
+    margin-top: -20px;
+    @media screen and (min-width: 720px) {
+        display: flex;
+    }
+    .page-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        overflow: auto;
+        height: calc(100vh - 40px);
+        .page {
+            position: relative;
+            flex: 1 1 auto;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #293241;
+            overflow-x: clip;
+            .empty {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: #293241;
+                pointer-events: none;
+            }
+            .contact-form {
+                > div {
+                    margin-bottom: 15px;
+                }
+                button {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    &.mobile {
+        display: inline-block;
+        padding-top: 25px;
+        margin: 0;
+        align-items: center;
+        font-size: 1.5rem;
+        .logo {
+            display: inline-block;
+            a {
+                padding-inline: 7px;
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .selected {
+        outline: 3px solid #19b6d2;
+        z-index: 1;
+    }
+}

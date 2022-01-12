@@ -1,0 +1,36 @@
+.section {
+    .actions {
+        z-index: 1;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 14px !important;
+        min-width: max-content;
+        i {
+            padding: 3px 0;
+            padding-right: 10px;
+            margin: 0;
+            cursor: pointer;
+            &:first-child {
+                padding-left: 10px;
+            }
+        }
+    }
+    .innersection > .actions {
+        top: unset;
+        bottom: -0.6px;
+        right: 50%;
+    }
+    .column > .actions {
+        top: unset;
+        bottom: -0.6px;
+        right: -1px;
+    }
+    .component .actions {
+        top: unset;
+        bottom: 100%;
+        right: -1px;
+    }
+}

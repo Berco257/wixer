@@ -1,0 +1,99 @@
+.publish {
+    &.editor {
+        display: flex;
+        margin-top: -60px;
+        .page-container {
+            height: 100vh;
+            scroll-behavior: smooth;
+            .page {
+                border: none;
+                margin: unset;
+                padding: unset;
+            }
+            *,
+            .editable {
+                cursor: default;
+            }
+            .btn,
+            button,
+            .link,
+            a {
+                cursor: pointer;
+            }
+            .element-hover {
+                outline: none;
+                z-index: auto;
+            }
+            .actions {
+                display: none;
+            }
+            .section {
+                .innersection .column {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:720px) {
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}
+.publish {
+    margin-top: -60px;
+    margin-bottom: -110px;
+    overflow-x: hidden;
+    .section {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0px calc(50% - 550px);
+        .innersection {
+            width: 100% !important;
+            max-width: 1100px !important;
+            @media screen and (max-width: 720px) {
+                align-items: inherit;
+                height: unset !important;
+            }
+        }
+        @media screen and (max-width: 720px) {
+            height: unset !important;
+        }
+        .contact-form {
+            > div {
+                margin-bottom: 15px;
+            }
+            button {
+                font-size: 1.5rem;
+            }
+        }
+        .component {
+            & > .text {
+                cursor: default;
+                @media screen and (max-width: 720px) {
+                    &.big {
+                        font-size: 45px !important;
+                    }
+                }
+            }
+            .btn {
+                cursor: pointer;
+            }
+        }
+    }
+    @media screen and (max-width: 720px) {
+        img {
+            width: 100% !important;
+        }
+        button {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        .contact-form {
+            display: unset;
+            > div {
+                width: 100%;
+            }
+        }
+    }
+}

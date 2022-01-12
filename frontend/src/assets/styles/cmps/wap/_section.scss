@@ -1,0 +1,37 @@
+.section {
+    display: flex;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 25px calc(50% - 550px);
+    flex-wrap: wrap;
+    .debug & {
+        border: 1px solid $sectionBorderColor !important;
+    }
+    .column {
+        flex-grow: 1 !important;
+    }
+    .columns {
+        display: flex;
+        padding: 20px 0;
+        flex-grow: 1;
+    }
+    .innersections {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        img {
+            width: 100% !important;
+        }
+        .btn {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        .column {
+            align-items: center;
+        }
+    }
+}

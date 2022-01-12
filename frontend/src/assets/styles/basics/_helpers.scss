@@ -1,0 +1,60 @@
+.flex {
+    display: flex;
+    &.direction-column {
+        flex-direction: column;
+    }
+    &.direction-row {
+        flex-direction: row;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-end {
+        justify-content: end;
+    }
+    &.justify-around {
+        justify-content: space-around;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: flex-start;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.clear-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clean-href {
+    text-decoration: none;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.link {
+    transition: color 0.3s;
+    text-decoration: none;
+    &.editable {
+        cursor: text;
+    }
+}
+
+.red-color {
+    color: red !important;
+}

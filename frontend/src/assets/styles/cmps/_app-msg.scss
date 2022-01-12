@@ -1,0 +1,32 @@
+.app-msg {
+    z-index: 9;
+    position: fixed;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    width: 300px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: "montserrat-medium";
+    box-shadow: 0 0 20px 0px #00000070;
+    transition: 0.4s;
+    .msg {
+        flex-grow: 1;
+    }
+    .close {
+        display: flex;
+        height: 12px;
+        cursor: pointer;
+    }
+    &.active {
+        bottom: 5px;
+    }
+    &.success {
+        background-color: #2e7d32;
+    }
+    &.error {
+        background-color: #d32f2f;
+    }
+}

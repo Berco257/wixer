@@ -1,0 +1,33 @@
+.main-nav {
+    flex-direction: column;
+    gap: 35px;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    padding-inline: 25px;
+    padding-top: 74px;
+    font-size: 1.4rem;
+    background-color: #003255f5;
+    box-shadow: -3px 0px 20px 0 #00000099;
+    transition: .4s;
+    a:hover {
+        font-weight: 700;
+    }
+    &.active {
+        z-index: 2;
+        right: 0;
+    }
+    @media screen and(min-width:720px) {
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-inline: 0px;
+        padding-top: 0px;
+        font-size: 1rem;
+        background-color: unset;
+        box-shadow: unset;
+    }
+}

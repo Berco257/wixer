@@ -1,0 +1,24 @@
+.font-edit {
+    & > div:not(:first-child) {
+        margin-block-end: 10px;
+    }
+    .font-size {
+        span {
+            margin-block-start: -5px;
+            margin-block-end: -5px;
+        }
+    }
+    .font-color {
+        .label {
+            margin-block-end: 5px;
+        }
+        .input {
+            margin-block-end: 20px;
+        }
+    }
+    .font-family {
+        .label {
+            margin-block-end: 5px;
+        }
+    }
+}

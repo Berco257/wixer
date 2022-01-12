@@ -1,0 +1,45 @@
+.login-signup-nav {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 35px;
+    li {
+        @media screen and(min-width:720px) {
+            height: 100%;
+        }
+    }
+    a {
+        height: 100%;
+        color: white;
+        &.active {
+            box-shadow: inset 0 -2px 0 0 white;
+            transition: 0.4s;
+            font-weight: 700;
+            @media screen and(min-width:720px) {
+                box-shadow: inset 0 -2px 0 0 #0b6fb7;
+            }
+        }
+        @media screen and(min-width:720px) {
+            color: #293241;
+        }
+    }
+    .login-signup-links {
+        gap: 35px;
+        @media screen and(min-width:720px) {
+            flex-direction: row;
+            gap: 0px;
+        }
+    }
+    span {
+        display: none;
+        align-self: center;
+        padding-inline: 5px;
+        @media screen and(min-width:720px) {
+            display: flex;
+        }
+    }
+    @media screen and(min-width:720px) {
+        flex-direction: row;
+        // align-items: center;
+    }
+}

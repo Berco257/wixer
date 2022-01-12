@@ -1,0 +1,14 @@
+.column-section-edit {
+    box-shadow: 0 1px 1px 0 #0000002e;
+    .bg-color-input {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-block-end: 10px;
+        .item {
+            input {
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.hamb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    order: 0;
+    transition: 0.4s;
+    cursor: pointer;
+    div {
+        width: 35px;
+        height: 10px;
+        border-block-end: 3px solid black;
+        transition: 0.4s;
+    }
+    &.active {
+        z-index: 2;
+        right: 70px;
+        div {
+            border-block-end: 3.5px solid black;
+        }
+        div:nth-child(1) {
+            transform: translateY(10px) translateX(-2.5px) rotate(-45deg);
+        }
+        div:nth-child(2) {
+            opacity: 0;
+        }
+        div:nth-child(3) {
+            transform: translateY(-10px) translateX(2.5px) rotate(45deg);
+        }
+    }
+    @media screen and(min-width:720px) {
+        display: none;
+    }
+}

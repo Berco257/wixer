@@ -1,0 +1,17 @@
+.main-nav-link-preview {
+    a {
+        height: 100%;
+        color: white;
+        &.active {
+            box-shadow: inset 0 -2px 0 0 white;
+            transition: 0.4s;
+            font-weight: 700;
+            @media screen and(min-width:720px) {
+                box-shadow: inset 0 -2px 0 0 #0b6fb7;
+            }
+        }
+        @media screen and(min-width:720px) {
+            color: #293241;
+        }
+    }
+}

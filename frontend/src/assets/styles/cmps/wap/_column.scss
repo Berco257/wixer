@@ -1,0 +1,12 @@
+.column {
+    flex: 1 1;
+    padding: 10px;
+    position: relative;
+
+    .debug & {
+        border: 1px solid $columnBorderColor !important;
+    }
+    @media screen and (max-width: 720px) {
+        flex:unset;
+    }
+}

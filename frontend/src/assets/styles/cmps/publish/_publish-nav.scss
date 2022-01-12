@@ -1,0 +1,59 @@
+.publish {
+    .publish-nav {
+        width: 100%;
+        transition: 0.5s;
+        position: relative;
+        display: flex;
+        z-index: 5;
+        .links {
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: 720px) {
+                display: flex;
+                padding-inline: 20px;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f9f9f9eb;
+                gap: 40px;
+                position: fixed;
+                right: -300px;
+                top: 0;
+                padding-block-start: 100px;
+                box-shadow: 0 0px 20px 0px #00000042;
+                transition: 0.4s;
+                justify-content: flex-start !important;
+            }
+            &.active {
+                right: 0;
+                z-index: 5;
+            }
+
+            .link {
+                order: 1;
+            }
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                @media screen and (max-width: 720px) {
+                    color: #000000 !important;
+                }
+            }
+        }
+        .hamb {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 3px 5px 9px;
+            background-color: white;
+            top: 20px;
+            &.active {
+                right: 25px;
+            }
+        }
+        .hamb,
+        .hamb > div {
+            z-index: 5;
+            cursor: pointer !important;
+        }
+    }
+}

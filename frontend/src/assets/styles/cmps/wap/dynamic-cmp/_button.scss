@@ -1,0 +1,8 @@
+.btn {
+  transition: background-color 0.3s;
+  border: none;
+  cursor: grab;
+  &.editable {
+    cursor: text;
+  }
+}

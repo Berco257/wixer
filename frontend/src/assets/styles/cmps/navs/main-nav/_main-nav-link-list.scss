@@ -1,0 +1,11 @@
+.main-nav-link-list {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 35px;
+    @media screen and(min-width:720px) {
+        flex-direction: row;
+        align-items: unset;
+        height: 100%;
+    }
+}

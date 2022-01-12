@@ -1,0 +1,25 @@
+.social-icons-edit {
+    .social-container {
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        input {
+            height: 25px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        svg {
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            path {
+                transition: fill 0.3s;
+            }
+        }
+    }
+}
+
+.social-icons-edit-color {
+    margin-bottom: 15px;
+}
