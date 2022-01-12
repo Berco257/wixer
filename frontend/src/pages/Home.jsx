@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HomeTop } from '../cmps/Home/HomeTop'
 import { HomeFeatureList } from '../cmps/Home/HomeFeatureList'
 import { TemplateList } from '../cmps/Templates/TemplateList'
