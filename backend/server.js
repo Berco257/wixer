@@ -31,8 +31,8 @@ if (process.env.NODE_ENV === 'production') {
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
 app.all('*', setupAsyncLocalStorage)
 
-const authRoutes = require('')
-const wapRoutes = require('')
+const authRoutes = require('./api/auth/auth.routes')
+const wapRoutes = require('./api/wap/wap.routes')
 app.use('/api/auth', authRoutes)
 app.use('/api/wap', wapRoutes)
 
