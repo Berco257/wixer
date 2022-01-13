@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt')
-const userService = require('')
+const userService = require('../user/user.service')
 const logger = require('../../services/logger.service')
 
 async function login(username, password) {
