@@ -1,4 +1,3 @@
-
 const fs = require('fs')
 const logger = require('../../services/logger.service')
 const gUsers = JSON.parse(require('../../data/users.json'))
