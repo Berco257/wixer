@@ -1,6 +1,6 @@
 const express = require('express')
 const requireAuth = require('../../middlewares/requireAuth.middleware')
-const {addWap, getWap,updateWap, deleteWap, getWaps} = require('')
+const {addWap, getWap,updateWap, deleteWap, getWaps} = require('./wap.controller')
 
 const router = express.Router()
 
