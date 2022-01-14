@@ -1,8 +1,7 @@
 const fs = require('fs')
 const asyncLocalStorage = require('../../services/als.service')
 const logger = require('../../services/logger.service')
-const db = '../../data/waps.json'
-const gWaps = JSON.parse(require(db))
+const gWaps = require('../../data/waps.json')
 
 async function getWaps() {
     const store = asyncLocalStorage.getStore()
@@ -44,7 +43,7 @@ async function add(wap) {
         const { userId } = store
         if (userId) wap.owner = userId
         gWaps.push({ ...wap })
-        fs.writeFileSync(db, JSON.stringify(gWaps))
+        fs.writeFileSync('././data/waps.json', JSON.stringify(gWaps))
         return JSON.parse(JSON.stringify(wap))
     } catch (err) {
         logger.error('Cannot add wap', err)
@@ -59,7 +58,7 @@ async function update(wap) {
         if (userId) wap.owner = userId
         const wapIdx = gWaps.findIndex(w => w._id === wap._id)
         gWaps[wapIdx] = wap
-        fs.writeFileSync(db, JSON.stringify(gWaps))
+        fs.writeFileSync('././data/waps.json', JSON.stringify(gWaps))
         return JSON.parse(JSON.stringify(wap))
     } catch (err) {
         logger.error(`Cannot update wap ${wap._id}`, err)

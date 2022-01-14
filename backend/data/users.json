@@ -1,1 +1,8 @@
-"[]"
+[
+    {
+        "username":"demo",
+        "password":"$2b$10$T8HPbeYC5aSf1oiRrhaRn.2zATX2e4qy9TZRNywEwzaEc2bd24CEO",
+        "fullname":"wixer demo",
+        "_id":"Y5bpbhbMv"
+    }
+]

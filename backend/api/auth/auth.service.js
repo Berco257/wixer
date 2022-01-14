@@ -10,7 +10,7 @@ async function login(username, password) {
 
     const match = await bcrypt.compare(password, user.password)
     if (!match) return Promise.reject('Invalid username or password')
-
+    
     delete user.password
     user._id = user._id.toString()
     return user
@@ -18,7 +18,6 @@ async function login(username, password) {
 
 async function signup(username, password, fullname) {
     if (!username || !password || !fullname) return Promise.reject('fullname, username and password are required!')
-
     const saltRounds = 10
     const hash = await bcrypt.hash(password, saltRounds)
 

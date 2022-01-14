@@ -1,26 +1,25 @@
 const fs = require('fs')
 const logger = require('../../services/logger.service')
-const gUsers = JSON.parse(require('../../data/users.json'))
+const gUsers = require('../../data/users.json')
+const utilService = require('../../services/util.service')
 
 async function getByUsername(username) {
     try {
         let user = gUsers.find(user => user.username === username)
-        if (user) {
-            user = { ...user }
-            delete user.password
-        }
+        if (user) user = { ...user }
         return user
     } catch (err) {
-        logger.error(`Cannot finding user ${userId}`, err)
+        logger.error(`Cannot find user ${userId}`, err)
         throw err
     }
 }
 
 async function add(user) {
     const userToAdd = { ...user }
+    userToAdd._id = utilService.makeId(9)
     gUsers.push(userToAdd)
     try {
-        fs.writeFileSync('../../data/users.json', JSON.stringify(gUsers))
+        fs.writeFileSync('././data/users.json', JSON.stringify(gUsers))
         return userToAdd
     } catch (err) {
         logger.error('Cannot add user', err)
@@ -29,7 +28,6 @@ async function add(user) {
 }
 
 module.exports = {
-    getById,
     getByUsername,
     add
 }

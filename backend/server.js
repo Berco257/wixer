@@ -40,10 +40,10 @@ app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
-const { connectSockets } = require('')
-connectSockets(http, session)
+// const { connectSockets } = require('')
+// connectSockets(http, session)
 
-const logger = require('')
+const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030
 http.listen(port, () => {
     logger.info(`Server is running on port: ${port}`)

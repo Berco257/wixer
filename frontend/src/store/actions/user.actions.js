@@ -17,7 +17,7 @@ const _setUser = (funcName, creds = null) => {
             return user
         } catch (err) {
             dispatch(setMsg({ type: 'error', txt: err }))
-            return err
+            // return err
         }
     }
 }

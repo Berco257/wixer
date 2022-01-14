@@ -1,59 +1,39 @@
-import { utilService } from './util.service'
-
-const STORAGE_KEY_USERS = 'users'
+import { httpService } from './http.service'
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
-const gUsers = JSON.parse(localStorage.getItem(STORAGE_KEY_USERS)) || []
 
-const signup = async creds => {
-    await _delay()
-
-    if (gUsers.some(u => u.username === creds.username)) return Promise.reject('user exists')
-    const user = { ...creds }
-    user._id = utilService.makeId()
-    gUsers.push({ ...user })
-    _saveUsers()
-    delete user.password
-    return _saveLocalUser(user)
+async function signup(userCred) {
+    try {
+        const user = await httpService.post('auth/signup', userCred);
+        return _saveLocalUser(user);
+    } catch (err) {
+        throw ('Error to signup. Please try later.')
+    }
 }
 
-const login = async creds => {
-    await _delay()
-    
-    let user = gUsers.find(u => {
-        return u.username === creds.username && u.password === creds.password
-    })
-    if (!user) return Promise.reject('wrong username or password')
-    user = { ...user }
-    delete user.password
-    return _saveLocalUser(user)
+async function login(userCred) {
+    try {
+        const user = await httpService.post('auth/login', userCred);
+        if (user) return _saveLocalUser(user);
+    } catch (err) {
+        if (err?.response?.status === 401) throw ('Wrong username or password')
+        else throw ('Error to login. Please try later.')
+    }
 }
 
-const logout = async () => {
-    await _delay()
-    
-    return Promise.resolve(sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER))
+async function logout() {
+    return await httpService.post('auth/logout')
+        .then(() => sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, null));
 }
 
-const getLoggedinUser = () => {
-    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
+function getLoggedinUser() {
+    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER) || null);
 }
 
-const _saveUsers = () => {
-    localStorage.setItem(STORAGE_KEY_USERS, JSON.stringify(gUsers))
+function _saveLocalUser(user) {
+    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user));
+    return user
 }
 
-const _saveLocalUser = (user) => {
-    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
-    return Promise.resolve(user)
-}
-
-const _delay = () => {
-    return new Promise((res, rej) => {
-        setTimeout(()=>{
-            res()
-        }, 500)
-    })
-}
 export const userService = {
     signup,
     login,
