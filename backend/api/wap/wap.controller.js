@@ -49,7 +49,6 @@ async function updateWap(req, res) {
 }
 
 // DELETE (delete wap)
-
 async function deleteWap(req, res) {
     try {
         const wapId = req.params.wapId
