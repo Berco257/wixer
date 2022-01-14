@@ -11,7 +11,7 @@ async function getByUsername(username) {
         }
         return user
     } catch (err) {
-        logger.error(`while finding user ${userId}`, err)
+        logger.error(`Cannot finding user ${userId}`, err)
         throw err
     }
 }
@@ -23,7 +23,7 @@ async function add(user) {
         fs.writeFileSync('../../data/users.json', JSON.stringify(gUsers))
         return userToAdd
     } catch (err) {
-        logger.error('cannot add user', err)
+        logger.error('Cannot add user', err)
         throw err
     }
 }
