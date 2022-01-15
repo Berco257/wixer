@@ -9,7 +9,7 @@ async function getByUsername(username) {
         if (user) user = { ...user }
         return user
     } catch (err) {
-        logger.error(`Cannot find user ${userId}`, err)
+        logger.error(`user.service - Cannot find user ${userId}`, err)
         throw err
     }
 }
@@ -19,10 +19,10 @@ async function add(user) {
     userToAdd._id = utilService.makeId(9)
     gUsers.push(userToAdd)
     try {
-        fs.writeFileSync('././data/users.json', JSON.stringify(gUsers))
+        fs.writeFileSync('././data/users.json', JSON.stringify(gUsers, null, 2))
         return userToAdd
     } catch (err) {
-        logger.error('Cannot add user', err)
+        logger.error('user.service - Cannot add user', err)
         throw err
     }
 }

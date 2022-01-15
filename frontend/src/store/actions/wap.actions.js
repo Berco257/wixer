@@ -20,7 +20,7 @@ export function saveWap(wap) {
             });
         }
         catch (err) {
-            console.log(err);
+            dispatch(setMsg({ type: 'error', txt: 'Failed to save app.' }))
         }
     }
 }
@@ -45,7 +45,7 @@ export function loadWap(wapId, wapName) {
                 }
             })
         } catch (err) {
-            dispatch(setMsg({ type: 'error', txt: err }))
+            dispatch(setMsg({ type: 'error', txt: 'Failed to find app.' }))
             throw err
         }
     }

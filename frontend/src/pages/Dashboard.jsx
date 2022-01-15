@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { WapPreview } from '../cmps/Dashboard/WapPreview/WapPreview'
 import { wapService } from '../services/waps.service'
 import { socketService } from '../services/socket.service'
-import { setLoader } from '../store/actions/general.actions'
+import { setLoader, setMsg } from '../store/actions/general.actions'
 import { useScrollToTop } from '../hooks/useScrollToTop'
 
 export const Dashboard = () => {
@@ -12,13 +12,20 @@ export const Dashboard = () => {
 
     const [waps, setWaps] = useState(null)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     useEffect(() => {
         (async () => {
             dispatch(setLoader(true))
-            // socketService.on('updated leads', onUpdateLeads)
-            setWaps(await wapService.getWaps())
-            dispatch(setLoader(false))
+            try {
+                // socketService.on('updated leads', onUpdateLeads)
+                setWaps(await wapService.getWaps())
+            } catch (err) {
+                dispatch(setMsg({ type: 'error', txt: err }))
+                navigate('/', { replace: true })
+            } finally {
+                dispatch(setLoader(false))
+            }
         })()
     }, [])
 

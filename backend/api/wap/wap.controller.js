@@ -7,7 +7,7 @@ async function getWaps(req, res) {
         const waps = await wapService.getWaps()
         res.send(waps)
     } catch (err) {
-        logger.error('Failed to get waps', err)
+        logger.error('wap.controller - Failed to get waps', err)
         res.status(500).send({ err: 'Failed to get waps' })
     }
 }
@@ -18,8 +18,9 @@ async function getWap(req, res) {
         let wap
         if (req.query.wapId) wap = await wapService.getById(req.query.wapId)
         else wap = await wapService.getByName(req.query.wapName)
+        res.send(wap)
     } catch (err) {
-        logger.error('Failed to get wap', err)
+        logger.error('wap.controller - Failed to get wap', err)
         res.status(500).send({ err: 'Failed to get wap' })
     }
 }
@@ -31,7 +32,7 @@ async function addWap(req, res) {
         const addedWap = await wapService.add(wap)
         res.json(addedWap)
     } catch (err) {
-        logger.error('Failed to add wap', err)
+        logger.error('wap.controller - Failed to add wap', err)
         res.status(500).send({ err: 'Failed to add wap' })
     }
 }
@@ -43,7 +44,7 @@ async function updateWap(req, res) {
         const savedWap = await wapService.update(wap)
         res.send(savedWap)
     } catch (err) {
-        logger.error('Failed to update wap', err)
+        logger.error('wap.controller - Failed to update wap', err)
         res.status(500).send({ err: 'Failed to update wap' })
     }
 }
@@ -51,11 +52,12 @@ async function updateWap(req, res) {
 // DELETE (delete wap)
 async function deleteWap(req, res) {
     try {
-        const wapId = req.params.wapId
-        await wapService.remove(wapId)
+        const wapId = req.params.id
+        if (wapId) await wapService.remove(wapId)
+        else throw err
         res.send({ msg: 'Deleted successfully' })
     } catch (err) {
-        logger.error('Failed to delete wap', err)
+        logger.error('wap.controller - Failed to delete wap', err)
         res.status(500).send({ err: 'Failed to delete wap' })
     }
 }

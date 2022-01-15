@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
+
 import { styled } from '@mui/material/styles'
 import Card from '@mui/material/Card'
 import CardMedia from '@mui/material/CardMedia'
@@ -16,6 +18,7 @@ import { ItemRemoveMsg } from '../ItemRemoveMsg'
 import { wapService } from '../../../services/waps.service'
 import NoAvailableImg from '../../../assets/images/no-available-img.jpg'
 import { WapHeader } from './WapHeader'
+import { setMsg } from '../../../store/actions/general.actions'
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props
@@ -37,6 +40,7 @@ const options = [
 const ITEM_HEIGHT = 48
 
 export const WapPreview = ({ wap, onRemove }) => {
+    const dispatch = useDispatch()
     const [expanded, setExpanded] = useState(false)
     const [wapToShow, setWap] = useState(wap)
     const [removeModal, setRemoveModal] = useState(false)
@@ -60,7 +64,7 @@ export const WapPreview = ({ wap, onRemove }) => {
                 await wapService.remove(wapId)
                 onRemove(wapId)
             } catch (err) {
-                console.log(err)
+                dispatch(setMsg({ type: 'error', txt: 'Cannot delete app.' }))
             }
         }
     }

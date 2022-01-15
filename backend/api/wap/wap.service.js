@@ -2,37 +2,39 @@ const fs = require('fs')
 const asyncLocalStorage = require('../../services/als.service')
 const logger = require('../../services/logger.service')
 const gWaps = require('../../data/waps.json')
+const utilService = require('../../services/util.service')
+const db = '././data/waps.json'
 
 async function getWaps() {
     const store = asyncLocalStorage.getStore()
     const { userId } = store
     try {
-        const waps = JSON.parse(JSON.stringify(await gWaps.filter(wap => wap.owner === userId)))
+        const waps = gWaps.filter(wap => wap.owner === userId)
         return waps
     } catch (err) {
-        logger.error('Error to getting waps', err)
+        logger.error('wap.service - Error to getting waps', err)
         throw err
     }
 }
 
 async function getById(wapId) {
     try {
-        const wap = JSON.parse(JSON.stringify(await gWaps.find(wap => wap._id === wapId)))
+        const wap = gWaps.find(wap => wap._id === wapId)
         if (!wap) throw new Error
         return wap
     } catch (err) {
-        logger.error(`Cannot finding wap ${wapId}`, err)
+        logger.error(`wap.service - Cannot finding wap ${wapId}`, err)
         throw err
     }
 }
 
 async function getByName(wapName) {
     try {
-        const wap = JSON.parse(JSON.stringify(await gWaps.find(wap => wap.name === wapName)))
+        const wap = gWaps.find(wap => wap.name === wapName)
         if (!wap) throw new Error
         return wap
     } catch (err) {
-        logger.error(`Cannot finding wap ${wapName}`, err)
+        logger.error(`wap.service - Cannot finding wap ${wapName}`, err)
         throw err
     }
 }
@@ -42,11 +44,12 @@ async function add(wap) {
         const store = asyncLocalStorage.getStore()
         const { userId } = store
         if (userId) wap.owner = userId
+        wap._id = utilService.makeId()
         gWaps.push({ ...wap })
-        fs.writeFileSync('././data/waps.json', JSON.stringify(gWaps))
-        return JSON.parse(JSON.stringify(wap))
+        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
+        return wap
     } catch (err) {
-        logger.error('Cannot add wap', err)
+        logger.error('wap.service - Cannot adding wap', err)
         throw err
     }
 }
@@ -58,10 +61,10 @@ async function update(wap) {
         if (userId) wap.owner = userId
         const wapIdx = gWaps.findIndex(w => w._id === wap._id)
         gWaps[wapIdx] = wap
-        fs.writeFileSync('././data/waps.json', JSON.stringify(gWaps))
-        return JSON.parse(JSON.stringify(wap))
+        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
+        return wap
     } catch (err) {
-        logger.error(`Cannot update wap ${wap._id}`, err)
+        logger.error(`wap.service - Cannot update wap ${wap._id}`, err)
         throw err
     }
 }
@@ -74,9 +77,9 @@ async function remove(wapId) {
             wap.owner === userId && wap._id === wapId
         )
         gWaps.splice(wapIdx, 1)
-        fs.writeFileSync(db, JSON.stringify(gWaps))
+        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
     } catch (err) {
-        logger.error(`Cannot remove wap ${wapId}`, err)
+        logger.error(`wap.service - Cannot remove wap ${wapId}`, err)
         throw err
     }
 }
@@ -85,10 +88,10 @@ async function addLead(wapName, lead) {
     try {
         const wapIdx = gWaps.findIndex(wap => wap.name === wapName)
         gWaps[wapIdx].leads.push(lead)
-        fs.writeFileSync(db, JSON.stringify(gWaps))
+        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
         return lead
     } catch (err) {
-        logger.error(`Cannot add lead to ${wapName} wap`, err)
+        logger.error(`wap.service - Cannot add lead to ${wapName} wap`, err)
         throw err
     }
 }

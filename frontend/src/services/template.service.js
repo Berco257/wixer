@@ -1,12 +1,12 @@
-import Plus from '../assets/images/templates/plus.svg';
-import Restaurant from '../assets/images/templates/restaurant.jpg';
-import Mercedes from '../assets/images/templates/mercedes.jpg';
-import Remodeling from '../assets/images/templates/remodeling.jpg';
-import Denatal from '../assets/images/templates/dental.jpg';
-import Beautycare from '../assets/images/templates/beautycare.jpg';
-import Jewelry from '../assets/images/templates/jewelry.jpg';
-import Construction from '../assets/images/templates/construction.jpg';
-import Fylo from '../assets/images/templates/fylo.jpg';
+import Plus from '../assets/images/templates/plus.svg'
+import Restaurant from '../assets/images/templates/restaurant.jpg'
+import Mercedes from '../assets/images/templates/mercedes.jpg'
+import Remodeling from '../assets/images/templates/remodeling.jpg'
+import Denatal from '../assets/images/templates/dental.jpg'
+import Beautycare from '../assets/images/templates/beautycare.jpg'
+import Jewelry from '../assets/images/templates/jewelry.jpg'
+import Construction from '../assets/images/templates/construction.jpg'
+import Fylo from '../assets/images/templates/fylo.jpg'
 
 const gTemplates = [
     {

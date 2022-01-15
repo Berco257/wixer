@@ -36,12 +36,6 @@ export const ContactForm = ({ data }) => {
         if (!form.msg || !form.subject || !form.name || !form.phone || !form.email || !wapName) return
         // socketService.emit('leads update', { ...form, id: utilService.makeId(), date: Date.now() })
 
-
-        // remove after install sockets
-        if(wapName) wapService.sendLead(wapName, form)
-        //////////////////////////////////////////////
-
-
         setIsOpen(true)
         setForm({ ...data.form })
     }

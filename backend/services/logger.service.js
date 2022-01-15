@@ -17,7 +17,7 @@ function isError(err) {
 
 function doLog(level, ...args) {
     const strs = args.map(arg =>
-        typeof arg === 'string' || isError(arg) ? arg : JSON.stringify(arg)
+        (typeof arg === 'string' || isError(arg)) ? arg : JSON.stringify(arg)
     )
 
     let line = strs.join(' | ')

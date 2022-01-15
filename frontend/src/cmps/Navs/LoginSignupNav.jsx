@@ -3,9 +3,12 @@ import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { onLogout } from '../../store/actions/user.actions'
 import { setLoader } from '../../store/actions/general.actions'
+import { setWap } from '../../store/actions/wap.actions'
 
 export const LoginSignupNav = ({ setScreen }) => {
     const user = useSelector(state => state.userReducer.user)
+    const chat = useSelector(state => state.wapReducer.chat)
+
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const logout = async () => {
@@ -13,6 +16,7 @@ export const LoginSignupNav = ({ setScreen }) => {
         dispatch(setLoader(true))
         const res = await dispatch(onLogout())
         if (!res) navigate('/login', { replace: true })
+        dispatch(setWap('', [], {}, chat, ''))
         dispatch(setLoader(false))
     }
 
