@@ -8,7 +8,15 @@ import Jewelry from '../assets/images/templates/jewelry.jpg'
 import Construction from '../assets/images/templates/construction.jpg'
 import Fylo from '../assets/images/templates/fylo.jpg'
 
-const gTemplates = [
+import { restaurant } from '../templates/restaurant'
+import { mercedes } from '../templates/mercedes'
+import { remodeling } from '../templates/remodeling'
+import { dental } from '../templates/dental'
+import { construction } from '../templates/construction'
+import { fylo } from '../templates/fylo'
+
+const gTemplates = [restaurant, mercedes, remodeling, dental, construction, fylo]
+const gTemplatePreviews = [
     {
         id: '',
         img: Plus,
@@ -57,16 +65,22 @@ const gTemplates = [
 ]
 
 const getAmountOfTemplates = (amount = 0) => {
-    if (!amount) return gTemplates
-    else return gTemplates.slice(0, amount)
+    if (!amount) return gTemplatePreviews
+    else return gTemplatePreviews.slice(0, amount)
 }
 
 
-function getTemplatesIds() {
-    return gTemplates.map(template => template.id)
+const getTemplatesIds = () => {
+    return gTemplatePreviews.map(template => template.id)
+}
+
+const getTemplate = (templateId) => {
+    const template = JSON.parse(JSON.stringify(gTemplates.find(template => template._id === templateId)))
+    return template
 }
 
 export const templateService = {
     getAmountOfTemplates,
-    getTemplatesIds
+    getTemplatesIds,
+    getTemplate
 }

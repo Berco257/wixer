@@ -317,3 +317,7 @@
 15.1.2022, 15:58:19 - DEBUG - auth.service - login with username: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
 15.1.2022, 16:00:49 - ERROR - wap.service - Cannot finding wap Em9Dw3C2AS | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
 15.1.2022, 16:00:49 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 16:02:02 - ERROR - wap.service - Cannot finding wap 6164652f381d1f42015a3aaf | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 16:02:02 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 16:46:28 - ERROR - wap.service - Cannot finding wap 6164652f381d1f42015a3aaf | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 16:46:28 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)

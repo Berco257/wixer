@@ -1,4 +1,5 @@
 import { httpService } from '../services/http.service'
+import { templateService } from './template.service'
 
 async function save(wap) {
     delete wap.selected;
@@ -12,6 +13,9 @@ async function remove(wapId) {
 }
 
 async function getById(wapId) {
+    if (templateService.getTemplatesIds().includes(wapId)) {
+        return templateService.getTemplate(wapId)
+    }
     return await httpService.get(`wap?wapId=${wapId}`)
 }
 
