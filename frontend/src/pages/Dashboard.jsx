@@ -35,6 +35,7 @@ export const Dashboard = () => {
 
     const onRemove = (wapId) => {
         setWaps(waps.filter(wap => wap._id !== wapId))
+        dispatch(setMsg({ type: 'success', txt: 'Deleted successfully' }))
     }
 
     return (
