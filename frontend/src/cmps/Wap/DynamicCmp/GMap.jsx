@@ -1,7 +1,7 @@
 import React from 'react'
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
-export function _GMap({ style, data, google }) {
+const _GMap = ({ style, data, google }) => {
     const { lat, lng, zoom, markerName } = data
 
     return (
@@ -21,6 +21,4 @@ export function _GMap({ style, data, google }) {
     )
 }
 
-export const GMap = GoogleApiWrapper({
-    apiKey: ('AIzaSyBj6uH299fNka4OlOEA05hitpszMFv3b1g')
-})(_GMap)
+export const GMap = GoogleApiWrapper({ apiKey: ('AIzaSyBj6uH299fNka4OlOEA05hitpszMFv3b1g') })(_GMap)
