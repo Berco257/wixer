@@ -5,7 +5,7 @@ const utilService = require('../../services/util.service')
 
 async function getByUsername(username) {
     try {
-        let user = gUsers.find(user => user.username === username)
+        let user = gUsers.find(user => user.username.toLowerCase() === username.toLowerCase())
         if (user) user = { ...user }
         return user
     } catch (err) {
@@ -15,6 +15,16 @@ async function getByUsername(username) {
 }
 
 async function add(user) {
+    let isUsernameAvailable = false
+    try {
+        const username = await getByUsername(user.username)
+        if(!username) throw err
+    } catch (err) {
+        isUsernameAvailable = true
+    }
+
+    if (!isUsernameAvailable) throw ('Username is not available.')
+    
     const userToAdd = { ...user }
     userToAdd._id = utilService.makeId(9)
     gUsers.push(userToAdd)

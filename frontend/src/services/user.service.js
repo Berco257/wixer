@@ -6,7 +6,7 @@ async function signup(userCred) {
         const user = await httpService.post('auth/signup', userCred);
         return _saveLocalUser(user);
     } catch (err) {
-        throw ('Error to signup. Please try later.')
+        throw (typeof err?.response?.data === 'string' ? err.response.data : 'Error to signup. Please try later.')
     }
 }
 
@@ -16,7 +16,7 @@ async function login(userCred) {
         if (user) return _saveLocalUser(user);
     } catch (err) {
         if (err?.response?.status === 401) throw ('Wrong username or password')
-        else throw ('Error to login. Please try later.')
+        else throw (typeof err === 'string' ? err : 'Error to login. Please try later.')
     }
 }
 

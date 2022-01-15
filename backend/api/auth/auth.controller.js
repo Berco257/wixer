@@ -23,7 +23,7 @@ async function signup(req, res) {
         res.json(user)
     } catch (err) {
         logger.error('auth.controller - Failed to signup', err)
-        res.status(500).send({ err: 'Failed to signup' })
+        res.status(500).send(typeof err === 'string' ? err : 'Error to signup. Please try later.')
     }
 }
 

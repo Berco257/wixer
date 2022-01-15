@@ -23,7 +23,7 @@ export const setMsg = msg => {
     return dispatch => {
         dispatch({
             type: 'SET_MSG',
-            msg
+            msg: (typeof msg.txt === 'string' ? msg : 'Error. Please try later.')
         })
         clearTimeout(timeout)
         timeout = setTimeout(() => {
