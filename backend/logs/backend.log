@@ -435,3 +435,6 @@
 16.1.2022, 12:51:04 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
 16.1.2022, 12:52:09 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
 16.1.2022, 12:52:46 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 13:31:43 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 13:31:46 - ERROR - wap.service - Cannot finding wap dsdsa | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 13:31:46 - ERROR - wap.controller - Failed to get wap | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router'
+import { useLocation } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { StyledTextField } from '../../../Mui/StyledTextField'
 import { StyledTextFieldDark } from '../../../Mui/StyledTextFieldDark'
@@ -9,8 +9,12 @@ import { MsgSent } from './MsgSent'
 import { ContactFormInputList } from './ContactFormInputList'
 import { socketService } from '../../../../services/socket.service'
 import { utilService } from '../../../../services/util.service'
+import { setMsg } from '../../../../store/actions/general.actions'
 
 export const ContactForm = ({ data }) => {
+    const dispatch = useDispatch()
+    const isEditor = useLocation().pathname.includes('editor')
+
     const wapId = useSelector(state => state.wapReducer._id)
     const ownerId = useSelector(state => state.wapReducer.owner)
     const { wapName } = useParams()
@@ -30,8 +34,12 @@ export const ContactForm = ({ data }) => {
 
     const onSubmit = (ev) => {
         ev.preventDefault()
-        if (!form.msg || !form.subject || !form.name || !form.phone || !form.email || !wapName) return
-        socketService.emit('new lead', {wapId, lead: { ...form, id: utilService.makeId(), date: Date.now(), isDone: false }})
+        if (isEditor) return
+        if (!form.msg || !form.subject || !form.name || !form.phone || !form.email || !wapName) {
+            dispatch(setMsg({ type: 'error', txt: 'All fields are required.' }))
+            return
+        }
+        socketService.emit('new lead', { wapId, lead: { ...form, id: utilService.makeId(), date: Date.now(), isDone: false } })
 
         setIsOpen(true)
         setForm({ ...data.form })
