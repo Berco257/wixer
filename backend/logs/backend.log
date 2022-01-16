@@ -321,3 +321,110 @@
 15.1.2022, 16:02:02 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
 15.1.2022, 16:46:28 - ERROR - wap.service - Cannot finding wap 6164652f381d1f42015a3aaf | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
 15.1.2022, 16:46:28 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:16:40 - DEBUG - auth.service - login with username: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:16:57 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:16:57 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:03 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:03 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:08 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:08 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:09 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:09 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:10 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:10 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:24 - DEBUG - auth.service - signup with username: demo, fullname: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:17:24 - ERROR - auth.controller - Failed to signup | Username is not available. (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:18:52 - DEBUG - auth.service - login with username: demod (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:18:52 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:19:00 - DEBUG - auth.service - login with username: demod (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:19:00 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:17 - DEBUG - auth.service - login with username: fghfgSGSDFGH (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:17 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:19 - DEBUG - auth.service - login with username: fghfgSGSDFGH (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:19 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:20 - DEBUG - auth.service - login with username: fghfgSGSDFGH (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:20 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:20 - DEBUG - auth.service - login with username: fghfgSGSDFGH (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 17:29:20 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:07:51 - ERROR - wap.service - Cannot finding wap dddd | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:07:51 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:08:32 - ERROR - wap.service - Cannot finding wap 404d | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:08:32 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:10:07 - ERROR - wap.service - Cannot finding wap index.html | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:10:07 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:10:45 - ERROR - wap.service - Cannot finding wap index.htmldd | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:10:45 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:30 - ERROR - wap.service - Cannot finding wap 404 | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:30 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:35 - ERROR - wap.service - Cannot finding wap index.html | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:35 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:35 - ERROR - wap.service - Cannot finding wap 404 | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:11:35 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:12:02 - ERROR - wap.service - Cannot finding wap index.html | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:12:02 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:12:26 - ERROR - wap.service - Cannot finding wap index.html | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:12:26 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:13:15 - DEBUG - auth.service - login with username: demo (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:13:20 - ERROR - wap.service - Cannot finding wap d | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:13:20 - ERROR - wap.controller - Failed to get wap | {} (sid: d1AOIy3_Rhq1k7AB6KRR4pDQWmxUzc31)
+15.1.2022, 18:15:42 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 18:16:18 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 18:18:54 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 18:26:57 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 18:27:21 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:12:31 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:12:36 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:12:57 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:14:27 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:27:59 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 21:55:35 - DEBUG - auth.service - login with username: demo (sid: mnfs0c3L1DsNS5Jr9g6FdnLeKDvlofWp)
+15.1.2022, 21:55:44 - ERROR - wap.service - Cannot finding wap berco | {} (sid: mnfs0c3L1DsNS5Jr9g6FdnLeKDvlofWp)
+15.1.2022, 21:55:44 - ERROR - wap.controller - Failed to get wap | {} (sid: mnfs0c3L1DsNS5Jr9g6FdnLeKDvlofWp)
+15.1.2022, 21:57:06 - ERROR - wap.service - Cannot add lead to wap undefined | TypeError: Cannot set property 'leads' of undefined 
+15.1.2022, 22:07:03 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:07:55 - ERROR - wap.service - Cannot add lead to wap undefined | TypeError: Cannot set property 'leads' of undefined 
+15.1.2022, 22:08:39 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:09:01 - ERROR - wap.service - Cannot add lead to wap undefined | TypeError: Cannot set property 'leads' of undefined 
+15.1.2022, 22:10:27 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:19:19 - ERROR - wap.service - Cannot finding wap bercdo | {} (sid: fVH_EILH0eFyVF2G-DS_mMjKpIK_V9mx)
+15.1.2022, 22:19:19 - ERROR - wap.controller - Failed to get wap | {} (sid: fVH_EILH0eFyVF2G-DS_mMjKpIK_V9mx)
+15.1.2022, 22:21:42 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:23:21 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:32:42 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:32:55 - DEBUG - auth.service - login with username: demo (sid: 1uriAJWrpQBn_QCwmXTJOqZaPxqqQGAi)
+15.1.2022, 22:33:31 - ERROR - wap.service - Cannot add lead to wap undefined | TypeError: Cannot set property 'leads' of undefined 
+15.1.2022, 22:34:41 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:35:02 - DEBUG - auth.service - login with username: demo (sid: Xf2JGpFvm5oCE7xnH7AGWuDHmCnngMOT)
+15.1.2022, 22:36:30 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 22:37:00 - DEBUG - auth.service - login with username: demo (sid: MsMIDUl2ag-WiG-TRCBX6S06NFrgSUJJ)
+15.1.2022, 22:37:47 - DEBUG - auth.service - login with username: demo (sid: MsMIDUl2ag-WiG-TRCBX6S06NFrgSUJJ)
+15.1.2022, 23:41:44 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 23:42:01 - DEBUG - auth.service - login with username: demo (sid: K_2vNP1qD4yERuxT27-KBRyrJfgV8_z_)
+15.1.2022, 23:45:50 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 23:46:05 - DEBUG - auth.service - login with username: demo (sid: iYj2LJwfdppLTkc4-8CaGHY0Tq9thC2k)
+15.1.2022, 23:48:33 - INFO - server.js - Server is running on port: 3030 
+15.1.2022, 23:49:02 - DEBUG - auth.service - login with username: demo (sid: wYSiLLd5DlvZ0jq-j9f7QKBq0e0ZElR5)
+16.1.2022, 0:04:08 - DEBUG - auth.service - login with username: demo (sid: wYSiLLd5DlvZ0jq-j9f7QKBq0e0ZElR5)
+16.1.2022, 0:05:31 - DEBUG - auth.service - login with username: demo (sid: wYSiLLd5DlvZ0jq-j9f7QKBq0e0ZElR5)
+16.1.2022, 0:07:57 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:08:09 - DEBUG - auth.service - login with username: demo (sid: ixxBk18eHj_T5Mi7z44iQKhEv7N3og2h)
+16.1.2022, 0:08:33 - ERROR - wap.service - Cannot finding wap berco | {} (sid: ixxBk18eHj_T5Mi7z44iQKhEv7N3og2h)
+16.1.2022, 0:08:33 - ERROR - wap.controller - Failed to get wap | {} (sid: ixxBk18eHj_T5Mi7z44iQKhEv7N3og2h)
+16.1.2022, 0:15:08 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:15:09 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:15:19 - DEBUG - auth.service - login with username: demo (sid: NRfSrvQUrHR8oMSeyfRz_Q6iAJpQvtv4)
+16.1.2022, 0:16:00 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:19:10 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:19:37 - ERROR - wap.service - Cannot add lead to wap [object Object] | TypeError: Cannot set property 'leads' of undefined 
+16.1.2022, 0:25:08 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:25:30 - DEBUG - auth.service - login with username: demo (sid: PxoNAi5jkHPTphUrYDzDZWLTW5IAHrxJ)
+16.1.2022, 0:26:34 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 0:27:13 - DEBUG - auth.service - login with username: demo (sid: CcZ6mi4gcRk6fu-mK8FZbSTiSHTyoQl6)
+16.1.2022, 2:10:59 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 2:18:30 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 2:21:21 - DEBUG - auth.service - login with username: demo (sid: -4DWQA1ierPY1ftDRNjMj0GBhFFWtTHh)
+16.1.2022, 2:23:40 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 2:24:00 - DEBUG - auth.service - login with username: demo (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
+16.1.2022, 2:46:54 - ERROR - wap.service - Cannot finding wap ssss | {} (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
+16.1.2022, 2:46:54 - ERROR - wap.controller - Failed to get wap | {} (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
+16.1.2022, 2:54:32 - DEBUG - auth.service - login with username: demo (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)

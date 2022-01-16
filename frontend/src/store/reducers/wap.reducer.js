@@ -13,6 +13,7 @@ import {
 
 const initialState = {
     _id: null,
+    owner: '',
     selected: null,
     name: '',
     cmps: [],
@@ -30,6 +31,7 @@ export function wapReducer(state = initialState, action) {
             return {
                 ...state,
                 _id: action._id,
+                owner: action?.owner ? action.owner : '',
                 cmps: action.cmps,
                 style: action.style,
                 chat: action.chat,

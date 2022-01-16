@@ -40,8 +40,8 @@ app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
-// const { connectSockets } = require('')
-// connectSockets(http, session)
+const { connectSockets } = require('./services/socket.service')
+connectSockets(http, session)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030

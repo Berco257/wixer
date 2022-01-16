@@ -6,7 +6,7 @@ import { SideBar } from './SideBar/SideBar'
 import { SIDEBAR_ITEM, COMPONENT, COLUMN, SECTION, SIDEBAR_COLUMN, SIDEBAR_INNERSECTION, INNERSECTION, SIDEBAR_SECTION } from '../../js/constants'
 import { utilService } from '../../services/util.service'
 import { eventBusService } from '../../services/event-bus-service'
-// import { socketService } from '../../services/socket.service'
+import { socketService } from '../../services/socket.service'
 import { wapService } from '../../services/waps.service'
 import { templateService } from '../../services/template.service'
 import { setFooter, setHeader, setLoader } from '../../store/actions/general.actions'
@@ -38,7 +38,7 @@ export const Editor = () => {
             dispatch(setLoader(true))
             dispatch(setHeader('min'))
             dispatch(setFooter('display-none'))
-            // socketService.on('wap change', wapChangeFromSocket)
+            socketService.on('wap add change', wapChangeFromSocket)
             const id = wapId || _id
             if (id) {
                 try {
@@ -54,7 +54,7 @@ export const Editor = () => {
         return () => {
             dispatch(setHeader(''))
             dispatch(setFooter(''))
-            // socketService.off('wap change')
+            socketService.off('wap add change')
         }
     }, [])
 
@@ -65,7 +65,7 @@ export const Editor = () => {
                 return
             }
             navigate(`/editor/${_id}`, { replace: true })
-            // socketService.emit('wap topic', _id)
+            socketService.emit('wap room', _id)
         }
     }, [_id])
 
@@ -93,7 +93,7 @@ export const Editor = () => {
         const lastStep = socketLastStep || wapHistory[wapHistory.length - 2]
         dispatch(setWap(_id, [...lastStep], style, chat, name))
         if (isEmit) {
-            // socketService.emit('wap change', { type: 'UNDO', lastStep })
+            socketService.emit('wap new change', { type: 'UNDO', lastStep })
             setWapHistory(wapHistory.slice(0, -2))
         }
     }

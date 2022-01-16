@@ -1,5 +1,6 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { useParams } from 'react-router'
 import { Button } from '@mui/material'
 import { StyledTextField } from '../../../Mui/StyledTextField'
@@ -7,23 +8,19 @@ import { StyledTextFieldDark } from '../../../Mui/StyledTextFieldDark'
 import { MsgSent } from './MsgSent'
 import { ContactFormInputList } from './ContactFormInputList'
 import { socketService } from '../../../../services/socket.service'
-import { wapService } from '../../../../services/waps.service'
+import { utilService } from '../../../../services/util.service'
 
 export const ContactForm = ({ data }) => {
+    const wapId = useSelector(state => state.wapReducer._id)
+    const ownerId = useSelector(state => state.wapReducer.owner)
     const { wapName } = useParams()
     const [form, setForm] = useState({ ...data.form })
     const [isOpen, setIsOpen] = useState(false)
     const StyledInput = data.isDark ? StyledTextFieldDark : StyledTextField
 
     useEffect(() => {
-        if (wapName) {
-            // socketService.emit('wap name', wapName)
-        }
-
-        return () => {
-            // socketService.off('wap name')
-        }
-    }, [data])
+        socketService.emit('owner room', ownerId)
+    }, [])
 
     const handleChange = ({ target }) => {
         const { name, value } = target
@@ -34,7 +31,7 @@ export const ContactForm = ({ data }) => {
     const onSubmit = (ev) => {
         ev.preventDefault()
         if (!form.msg || !form.subject || !form.name || !form.phone || !form.email || !wapName) return
-        // socketService.emit('leads update', { ...form, id: utilService.makeId(), date: Date.now() })
+        socketService.emit('new lead', {wapId, lead: { ...form, id: utilService.makeId(), date: Date.now(), isDone: false }})
 
         setIsOpen(true)
         setForm({ ...data.form })

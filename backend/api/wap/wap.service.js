@@ -84,14 +84,17 @@ async function remove(wapId) {
     }
 }
 
-async function addLead(wapName, lead) {
+async function addLead(wapId, lead) {
     try {
-        const wapIdx = gWaps.findIndex(wap => wap.name === wapName)
-        gWaps[wapIdx].leads.push(lead)
+        if (!wapId) return
+        const wapIdx = gWaps.findIndex(wap => wap._id === wapId)
+        if (gWaps[wapIdx]?.leads) gWaps[wapIdx].leads.push(lead)
+        else gWaps[wapIdx].leads = [lead]
+
         fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
         return lead
     } catch (err) {
-        logger.error(`wap.service - Cannot add lead to ${wapName} wap`, err)
+        logger.error(`wap.service - Cannot add lead to wap ${wapId}`, err)
         throw err
     }
 }

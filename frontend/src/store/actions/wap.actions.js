@@ -35,6 +35,7 @@ export function loadWap(wapId, wapName) {
             dispatch({
                 type: 'SET_WAP',
                 _id: wap._id,
+                owner: wap?.owner ? wap.owner : '',
                 cmps: wap.cmps,
                 name: wap.name,
                 style: wap.style,
@@ -67,7 +68,7 @@ export function removeItem(splitItemPath, type) {
         type: 'REMOVE_ITEM',
         item: { splitItemPath, type }
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -76,7 +77,7 @@ export function duplicateItem(splitItemPath, type) {
         type: 'DUPLICATE_ITEM',
         item: { splitItemPath, type }
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 
 }
@@ -87,7 +88,7 @@ export function moveSidebarComponentIntoParent(splitDropZonePath, newItem) {
         splitDropZonePath,
         newItem
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -96,7 +97,7 @@ export function moveSidebarColumnIntoParent(splitDropZonePath) {
         type: 'MOVE_SIDEBAR_COLUMN_INTO_PARENT',
         splitDropZonePath
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -105,7 +106,7 @@ export function moveSidebarInnerSectionIntoParent(splitDropZonePath) {
         type: 'MOVE_SIDEBAR_INNER_SECTION_INTO_PARENT',
         splitDropZonePath
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -115,7 +116,7 @@ export function moveWithinParent(splitDropZonePath, splitItemPath) {
         splitDropZonePath,
         splitItemPath
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -126,7 +127,7 @@ export function moveToDifferentParent(splitDropZonePath, splitItemPath, item) {
         splitItemPath,
         item
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -137,7 +138,7 @@ export function updateCmp(comp, field, value) {
         field,
         value
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -154,7 +155,7 @@ export function insert(index, newItem) {
         index,
         newItem
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -170,7 +171,7 @@ export function setChatIsEnabled(isChatEnabled) {
         type: 'SET_CHAT_ENABLED',
         isChatEnabled
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -179,7 +180,7 @@ export function chatOpeningTextChange(openingText) {
         type: 'CHAT_OPENING_TEXT_CHANGE',
         openingText
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 
@@ -188,7 +189,7 @@ export function chatAnswerTextChange(answerText) {
         type: 'CHAT_ANSWER_TEXT_CHANGE',
         answerText
     }
-    // socketService.emit('wap change', action);
+    socketService.emit('wap new change', action);
     return dispatch => dispatch(action);
 }
 

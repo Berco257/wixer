@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { WapPreview } from '../cmps/Dashboard/WapPreview/WapPreview'
 import { wapService } from '../services/waps.service'
 import { socketService } from '../services/socket.service'
@@ -13,12 +13,14 @@ export const Dashboard = () => {
     const [waps, setWaps] = useState(null)
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const user = useSelector(state => state.userReducer.user)
 
     useEffect(() => {
         (async () => {
             dispatch(setLoader(true))
             try {
-                // socketService.on('updated leads', onUpdateLeads)
+                socketService.emit('owner room', user._id)
+                socketService.on('refresh leads', onUpdateLeads)
                 setWaps(await wapService.getWaps())
             } catch (err) {
                 dispatch(setMsg({ type: 'error', txt: err }))
@@ -27,6 +29,9 @@ export const Dashboard = () => {
                 dispatch(setLoader(false))
             }
         })()
+        return () => {
+            socketService.off('refresh leads')
+        }
     }, [])
 
     const onUpdateLeads = async () => {
