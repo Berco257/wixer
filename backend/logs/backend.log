@@ -440,3 +440,7 @@
 16.1.2022, 13:31:46 - ERROR - wap.controller - Failed to get wap | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
 16.1.2022, 13:50:11 - INFO - server.js - Server is running on port: 3030 
 16.1.2022, 14:14:15 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 14:44:06 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 14:44:54 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)
+16.1.2022, 14:45:31 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)
+16.1.2022, 14:45:49 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)

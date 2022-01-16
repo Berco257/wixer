@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { DndProvider } from 'react-dnd'
 import { TouchBackend } from 'react-dnd-touch-backend'
@@ -12,38 +12,48 @@ import { EmptyWap } from './EmptyWap'
 import { SectionList } from './SectionList'
 import { socketService } from '../../services/socket.service'
 import Pointer from '../../assets/images/pointer.svg'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
 export const Wap = ({ cmps, handleDrop, updateCmp, onSelect, selected, chat }) => {
     const isEditor = useLocation().pathname.includes('editor')
-    const [mousePos, setMousePos] = useState({ offsetX: 0, offsetY: 0 })
+    const ref = useRef(null)
+    const [mousePos, setMousePos] = useState({ clientX: 0, clientY: 0 })
     const [isMouseActive, setIsMouseActive] = useState(false)
 
     useEffect(() => {
-        socketService.on('mouse update', onMouseUpdate)
+        if (isEditor) socketService.on('mouse update', onMouseUpdate)
         return () => {
-            socketService.off('mouse update')
+            if (isEditor) socketService.off('mouse update')
         }
     }, [])
 
-    let timeout
+    let timeoutMousePos
+    let timeoutIsMouseActive
     const onMouseUpdate = pos => {
         if (!isMouseActive) setIsMouseActive(true)
-        clearTimeout(timeout)
-        timeout = setTimeout(() => {
+
+        const scroll = ref.current.scrollTop
+        pos.clientY = pos.clientY - scroll
+
+        clearTimeout(timeoutMousePos)
+        timeoutMousePos = setTimeout(() => {
             setMousePos(pos)
         }, 0)
+
+        clearTimeout(timeoutIsMouseActive)
+        timeoutIsMouseActive = setTimeout(() => {
+            setIsMouseActive(false)
+        }, 1000)
     }
 
     const mouseOver = ({ clientX, clientY }) => {
-        const pos = { clientX, clientY }
+        const scroll = ref.current.scrollTop
+        const pos = { clientX , clientY: clientY + scroll }
         socketService.emit('mouse move', pos)
     }
 
     return (
         <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
-            <section onMouseMove={isEditor ? mouseOver : () => { }} className="page-container">
+            <section ref={ref} onDrag={isEditor ? mouseOver : () => { }} onMouseMove={isEditor ? mouseOver : () => { }} className="page-container">
                 {!cmps && <LoaderSmall />}
                 {cmps && (
                     <div className="page flex direction-column">
