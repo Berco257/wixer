@@ -1,15 +1,18 @@
-const fs = require('fs')
+const ObjectId = require('mongodb').ObjectId
+const dbService = require('../../services/db.service')
 const asyncLocalStorage = require('../../services/als.service')
 const logger = require('../../services/logger.service')
-const gWaps = require('../../data/waps.json')
-const utilService = require('../../services/util.service')
-const db = '././data/waps.json'
 
 async function getWaps() {
     const store = asyncLocalStorage.getStore()
     const { userId } = store
     try {
-        const waps = gWaps.filter(wap => wap.owner === userId)
+        const collection = await dbService.getCollection('wap')
+        let waps = await collection.find({ owner: ObjectId(userId) }).toArray()
+        waps = waps.map(wap => {
+            wap.createdAt = wap._id.getTimestamp()
+            return wap
+        })
         return waps
     } catch (err) {
         logger.error('wap.service - Error to getting waps', err)
@@ -19,7 +22,8 @@ async function getWaps() {
 
 async function getById(wapId) {
     try {
-        const wap = gWaps.find(wap => wap._id === wapId)
+        const collection = await dbService.getCollection('wap')
+        const wap = await collection.findOne({ '_id': ObjectId(wapId) })
         if (!wap) throw new Error
         return wap
     } catch (err) {
@@ -30,7 +34,8 @@ async function getById(wapId) {
 
 async function getByName(wapName) {
     try {
-        const wap = gWaps.find(wap => wap.name === wapName)
+        const collection = await dbService.getCollection('wap')
+        const wap = await collection.findOne({ 'name': wapName })
         if (!wap) throw new Error
         return wap
     } catch (err) {
@@ -43,10 +48,9 @@ async function add(wap) {
     try {
         const store = asyncLocalStorage.getStore()
         const { userId } = store
-        if (userId) wap.owner = userId
-        wap._id = utilService.makeId()
-        gWaps.push({ ...wap })
-        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
+        if (userId) wap.owner = ObjectId(userId)
+        const collection = await dbService.getCollection('wap')
+        await collection.insertOne(wap)
         return wap
     } catch (err) {
         logger.error('wap.service - Cannot adding wap', err)
@@ -56,13 +60,18 @@ async function add(wap) {
 
 async function update(wap) {
     try {
+        const wapToSave = {
+            ...wap,
+            _id: ObjectId(wap._id)
+        }
+
         const store = asyncLocalStorage.getStore()
         const { userId } = store
-        if (userId) wap.owner = userId
-        const wapIdx = gWaps.findIndex(w => w._id === wap._id)
-        gWaps[wapIdx] = wap
-        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
-        return wap
+        if (userId) wapToSave.owner = ObjectId(userId)
+
+        const collection = await dbService.getCollection('wap')
+        await collection.updateOne({ _id: wapToSave._id }, { $set: wapToSave })
+        return wapToSave
     } catch (err) {
         logger.error(`wap.service - Cannot update wap ${wap._id}`, err)
         throw err
@@ -73,11 +82,8 @@ async function remove(wapId) {
     try {
         const store = asyncLocalStorage.getStore()
         const { userId } = store
-        const wapIdx = gWaps.findIndex(wap =>
-            wap.owner === userId && wap._id === wapId
-        )
-        gWaps.splice(wapIdx, 1)
-        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
+        const collection = await dbService.getCollection('wap')
+        await collection.deleteOne({ '_id': ObjectId(wapId), 'owner': ObjectId(userId) })
     } catch (err) {
         logger.error(`wap.service - Cannot remove wap ${wapId}`, err)
         throw err
@@ -87,11 +93,8 @@ async function remove(wapId) {
 async function addLead(wapId, lead) {
     try {
         if (!wapId) return
-        const wapIdx = gWaps.findIndex(wap => wap._id === wapId)
-        if (gWaps[wapIdx]?.leads) gWaps[wapIdx].leads.push(lead)
-        else gWaps[wapIdx].leads = [lead]
-
-        fs.writeFileSync(db, JSON.stringify(gWaps, null, 2))
+        const collection = await dbService.getCollection('wap')
+        await collection.updateOne({ '_id': ObjectId(wapId) }, { $push: { leads: lead } })
         return lead
     } catch (err) {
         logger.error(`wap.service - Cannot add lead to wap ${wapId}`, err)

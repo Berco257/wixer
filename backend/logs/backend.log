@@ -661,3 +661,40 @@
 16.1.2022, 22:42:10 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
 16.1.2022, 22:42:10 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
 16.1.2022, 22:42:10 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:43:36 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 22:43:45 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 22:43:49 - DEBUG - auth.service - login with username: demo (sid: kziOAAs1d2rbFANFLalPoZ1qZTE-k_Tx)
+16.1.2022, 23:37:19 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 23:37:34 - DEBUG - auth.service - login with username: demo (sid: RGf71VlNKWJQiB2XG4B8xF5s0blvGdQ9)
+16.1.2022, 23:38:03 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 23:38:35 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 23:41:57 - DEBUG - auth.service - login with username: demo (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:42:43 - DEBUG - auth.service - login with username: demos (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:42:43 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:42:47 - DEBUG - auth.service - login with username: demo (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:43:52 - ERROR - wap.service - Cannot adding wap | TypeError: collection.insretOne is not a function (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:43:52 - ERROR - wap.controller - Failed to add wap | TypeError: collection.insretOne is not a function (sid: 5v4fYxvRL_xqm46jMCPWgDXf6g9bee48)
+16.1.2022, 23:44:47 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 23:49:01 - DEBUG - auth.service - login with username: demo (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:49:36 - ERROR - wap.service - Cannot finding wap 61e492e9173e856f55ccdee0 | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:49:36 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:49:55 - ERROR - wap.service - Cannot finding wap 61e492f1173e856f55ccdee1 | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:49:55 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:51:21 - ERROR - wap.service - Cannot finding wap 61e49303173e856f55ccdee2 | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:51:21 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:00 - DEBUG - auth.service - login with username: demo (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:09 - ERROR - wap.service - Cannot finding wap 61e492be173e856f55ccdedf | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:09 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:19 - ERROR - wap.service - Cannot finding wap 61e492be173e856f55ccdedf | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:19 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:28 - ERROR - wap.service - Cannot finding wap 61e492be173e856f55ccdedf | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:53:28 - ERROR - wap.controller - Failed to get wap | TypeError: collection.findOne is not a function (sid: YypPB0VyR5j9abkaxPA9OOAtbbAwKAh3)
+16.1.2022, 23:54:48 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 23:55:29 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:00:49 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:00:58 - ERROR - wap.service - Cannot finding wap dede | {} (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:00:58 - ERROR - wap.controller - Failed to get wap | {} (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:03:11 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:03:40 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:03:52 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
+17.1.2022, 0:05:06 - INFO - server.js - Server is running on port: 3030 
