@@ -25,6 +25,10 @@ const connectSockets = (http, session) => {
             socket.to(socket.wapId).emit('wap add change', action)
         })
 
+        socket.on('mouse move', pos => {
+            socket.to(socket.wapId).emit('mouse update', pos)
+        })
+
         socket.on('owner room', ownerId => {
             // console.log('Join to room:', wapId);
             if (socket.ownerId === ownerId) return

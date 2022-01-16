@@ -428,3 +428,10 @@
 16.1.2022, 2:46:54 - ERROR - wap.service - Cannot finding wap ssss | {} (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
 16.1.2022, 2:46:54 - ERROR - wap.controller - Failed to get wap | {} (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
 16.1.2022, 2:54:32 - DEBUG - auth.service - login with username: demo (sid: aoWG15pCgaFTe_eJlMXeYxhT-VblArSB)
+16.1.2022, 4:52:12 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 4:52:23 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 4:52:38 - ERROR - wap.service - Cannot finding wap YJKUW3eRBlcss img position | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 4:52:38 - ERROR - wap.controller - Failed to get wap | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 12:51:04 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 12:52:09 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
+16.1.2022, 12:52:46 - DEBUG - auth.service - login with username: demo (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)

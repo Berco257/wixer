@@ -10,13 +10,40 @@ import { DropZone } from './DropZone'
 import { ChatApp } from './DynamicCmp/ChatApp/ChatApp'
 import { EmptyWap } from './EmptyWap'
 import { SectionList } from './SectionList'
+import { socketService } from '../../services/socket.service'
+import Pointer from '../../assets/images/pointer.svg'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 export const Wap = ({ cmps, handleDrop, updateCmp, onSelect, selected, chat }) => {
     const isEditor = useLocation().pathname.includes('editor')
+    const [mousePos, setMousePos] = useState({ offsetX: 0, offsetY: 0 })
+    const [isMouseActive, setIsMouseActive] = useState(false)
+
+    useEffect(() => {
+        socketService.on('mouse update', onMouseUpdate)
+        return () => {
+            socketService.off('mouse update')
+        }
+    }, [])
+
+    let timeout
+    const onMouseUpdate = pos => {
+        if (!isMouseActive) setIsMouseActive(true)
+        clearTimeout(timeout)
+        timeout = setTimeout(() => {
+            setMousePos(pos)
+        }, 0)
+    }
+
+    const mouseOver = ({ clientX, clientY }) => {
+        const pos = { clientX, clientY }
+        socketService.emit('mouse move', pos)
+    }
 
     return (
         <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
-            <section className="page-container">
+            <section onMouseMove={isEditor ? mouseOver : () => { }} className="page-container">
                 {!cmps && <LoaderSmall />}
                 {cmps && (
                     <div className="page flex direction-column">
@@ -37,6 +64,9 @@ export const Wap = ({ cmps, handleDrop, updateCmp, onSelect, selected, chat }) =
                         {isEditor && !cmps.length && <EmptyWap />}
                         {chat.isEnabled && <ChatApp openingText={chat.openingText} answerText={chat.answerText} />}
                     </div>
+                )}
+                {isEditor && isMouseActive && (
+                    <img className='user-pointer' style={{ top: mousePos.clientY, left: mousePos.clientX }} src={Pointer} />
                 )}
             </section>
         </DndProvider>
