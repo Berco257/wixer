@@ -2050,7 +2050,7 @@
                         "txt": "Exceptional Home Remodeling And Renovations"
                       },
                       "style": {
-                        "fontSize": "72",
+                        "fontSize": 45,
                         "color": "#f5f5f5",
                         "fontFamily": "poppins",
                         "textAlign": "left",

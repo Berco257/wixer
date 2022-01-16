@@ -1,15 +1,13 @@
-const fs = require('fs')
+const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
-const gUsers = require('../../data/users.json')
-const utilService = require('../../services/util.service')
 
 async function getByUsername(username) {
     try {
-        let user = gUsers.find(user => user.username.toLowerCase() === username.toLowerCase())
-        if (user) user = { ...user }
+        const collection = await dbService.getCollection('user')
+        const user = await collection.findOne({ username })
         return user
     } catch (err) {
-        logger.error(`user.service - Cannot find user ${userId}`, err)
+        logger.error(`user.service - Cannot find user ${username}`, err)
         throw err
     }
 }
@@ -18,18 +16,21 @@ async function add(user) {
     let isUsernameAvailable = false
     try {
         const username = await getByUsername(user.username)
-        if(!username) throw err
+        if (!username) throw err
     } catch (err) {
         isUsernameAvailable = true
     }
 
     if (!isUsernameAvailable) throw ('Username is not available.')
-    
-    const userToAdd = { ...user }
-    userToAdd._id = utilService.makeId(9)
-    gUsers.push(userToAdd)
+
     try {
-        fs.writeFileSync('././data/users.json', JSON.stringify(gUsers, null, 2))
+        const userToAdd = {
+            username: user.username,
+            password: user.password,
+            fullname: user.fullname
+        }
+        const collection = await dbService.getCollection('user')
+        await collection.insertOne(userToAdd)
         return userToAdd
     } catch (err) {
         logger.error('user.service - Cannot add user', err)

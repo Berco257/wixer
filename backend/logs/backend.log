@@ -444,3 +444,220 @@
 16.1.2022, 14:44:54 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)
 16.1.2022, 14:45:31 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)
 16.1.2022, 14:45:49 - DEBUG - auth.service - login with username: demo (sid: NNQ8g_wDZJw9Fl262ORPzSwy_GIgvjSq)
+16.1.2022, 19:09:16 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:21:08 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:22:25 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:23:21 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:23:49 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:29:57 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:31:56 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:32:11 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:33:11 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:39:27 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:39:31 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:39:37 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:40:04 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:51:56 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:52:38 - DEBUG - auth.service - login with username: demo (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:52:39 - ERROR - user.service - Cannot find user demo | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:52:39 - ERROR - auth.controller - Failed to Login | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:14 - DEBUG - auth.service - login with username: demo (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:15 - ERROR - user.service - Cannot find user demo | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:15 - ERROR - auth.controller - Failed to Login | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:29 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:30 - ERROR - user.service - Cannot find user demo | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:30 - ERROR - user.service - Cannot add user | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:53:30 - ERROR - auth.controller - Failed to signup | ReferenceError: loggerService is not defined (sid: bumSD2cn5POyVtHyplxpGsPMSvOLJ6J2)
+16.1.2022, 19:54:40 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 19:55:35 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: 2ERGL2FscjApHWw1BMrak09esKY7W-RI)
+16.1.2022, 19:55:35 - ERROR - user.service - Cannot find user demo | ReferenceError: loggerService is not defined (sid: 2ERGL2FscjApHWw1BMrak09esKY7W-RI)
+16.1.2022, 19:55:36 - ERROR - user.service - Cannot add user | ReferenceError: loggerService is not defined (sid: 2ERGL2FscjApHWw1BMrak09esKY7W-RI)
+16.1.2022, 19:55:36 - ERROR - auth.controller - Failed to signup | ReferenceError: loggerService is not defined (sid: 2ERGL2FscjApHWw1BMrak09esKY7W-RI)
+16.1.2022, 20:03:16 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:03:23 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: IWr6eGgob3jVv9fSw-X3NbtcshPvSNCY)
+16.1.2022, 20:03:24 - ERROR - user.service - Cannot find user demo | ReferenceError: loggerService is not defined (sid: IWr6eGgob3jVv9fSw-X3NbtcshPvSNCY)
+16.1.2022, 20:03:25 - ERROR - user.service - Cannot add user | ReferenceError: loggerService is not defined (sid: IWr6eGgob3jVv9fSw-X3NbtcshPvSNCY)
+16.1.2022, 20:03:25 - ERROR - auth.controller - Failed to signup | ReferenceError: loggerService is not defined (sid: IWr6eGgob3jVv9fSw-X3NbtcshPvSNCY)
+16.1.2022, 20:09:48 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:10:02 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:03 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:03 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:03 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:03 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:03 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:04 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:10:04 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: uAPnjamJn1L7x_M6ZDhn3ROly-25gPPB)
+16.1.2022, 20:13:51 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:13:59 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:14:21 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:14:22 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: -rZo5dg-80elZzY8LsVlOelBxgUAz_aK)
+16.1.2022, 20:15:02 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:15:11 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:12 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:12 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:12 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:13 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:13 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:13 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:15:13 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: uagiuHY-9KO8irdHZmOZb7sxF5Ud-T1h)
+16.1.2022, 20:33:47 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:34:56 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:57 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:57 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:57 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:58 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:58 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:58 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:34:58 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: a_4wbxOPXAih0H0b26U3o6nDCkyVRRHk)
+16.1.2022, 20:37:42 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:38:12 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:38:17 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:18 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:18 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:18 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:19 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:19 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:19 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:19 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: gigBukI0zhx8VWbD43sBOC_Oq0v7qiMX)
+16.1.2022, 20:38:40 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:38:41 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:38:42 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: JTLfjscwyVS2LgiYXSAGtObQO6oD-UOS)
+16.1.2022, 20:39:20 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:41:13 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:41:16 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:41:20 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:21 - ERROR - user.service - Cannot find user demo | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:21 - ERROR - user.service - Cannot add user | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:21 - ERROR - auth.controller - Failed to signup | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:25 - DEBUG - auth.service - login with username: demo (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:25 - ERROR - user.service - Cannot find user demo | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:25 - ERROR - auth.controller - Failed to Login | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:31 - DEBUG - auth.service - login with username: demo (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:32 - ERROR - user.service - Cannot find user demo | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:32 - ERROR - auth.controller - Failed to Login | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:37 - DEBUG - auth.service - login with username: demo (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:38 - ERROR - user.service - Cannot find user demo | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:41:38 - ERROR - auth.controller - Failed to Login | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:42:03 - DEBUG - auth.service - login with username: demo (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:42:04 - ERROR - user.service - Cannot find user demo | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:42:04 - ERROR - auth.controller - Failed to Login | ReferenceError: logger is not defined (sid: dMcm7KmnHil2Tc24juuwlKnMkKdTf-dr)
+16.1.2022, 20:43:38 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:43:42 - DEBUG - auth.service - login with username: demo (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:43 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:43 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:43 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:43 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:48 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:48 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:48 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:48 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:49 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:49 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:49 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:43:49 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: xg0TM5VN9PvgYfg1VN8Q_J8Bqeg2xVAb)
+16.1.2022, 20:46:38 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:46:42 - DEBUG - auth.service - login with username: demo (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:43 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:43 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:43 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:43 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:48 - DEBUG - auth.service - login with username: demo (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:48 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:48 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:48 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:46:48 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: mNmlddOf63jojRAFcxtC9CHor8vduzFr)
+16.1.2022, 20:47:04 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:47:11 - DEBUG - auth.service - login with username: demo (sid: FvE6Ow5OWALEF85aOIrNwZO-xrxHgtHx)
+16.1.2022, 20:47:12 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: FvE6Ow5OWALEF85aOIrNwZO-xrxHgtHx)
+16.1.2022, 20:47:12 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: FvE6Ow5OWALEF85aOIrNwZO-xrxHgtHx)
+16.1.2022, 20:47:12 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: FvE6Ow5OWALEF85aOIrNwZO-xrxHgtHx)
+16.1.2022, 20:47:12 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: FvE6Ow5OWALEF85aOIrNwZO-xrxHgtHx)
+16.1.2022, 20:49:24 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:50:05 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:50:09 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:50:18 - DEBUG - auth.service - login with username: demo (sid: WE5Xn2BO0u8nJ9x2Ug1sH2CAUtaGirnY)
+16.1.2022, 20:50:43 - DEBUG - auth.service - login with username: demo (sid: WE5Xn2BO0u8nJ9x2Ug1sH2CAUtaGirnY)
+16.1.2022, 20:51:30 - DEBUG - auth.service - login with username: s (sid: WE5Xn2BO0u8nJ9x2Ug1sH2CAUtaGirnY)
+16.1.2022, 20:51:30 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: WE5Xn2BO0u8nJ9x2Ug1sH2CAUtaGirnY)
+16.1.2022, 20:51:39 - DEBUG - auth.service - login with username: demo (sid: WE5Xn2BO0u8nJ9x2Ug1sH2CAUtaGirnY)
+16.1.2022, 20:52:53 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:52:55 - DEBUG - auth.service - login with username: demo (sid: oFBgPe7M6yxX2C-n8UZMDs2TUXR3oQI8)
+16.1.2022, 20:53:08 - DEBUG - auth.service - login with username: demo (sid: oFBgPe7M6yxX2C-n8UZMDs2TUXR3oQI8)
+16.1.2022, 20:53:28 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:53:34 - DEBUG - auth.service - login with username: demo (sid: 9W4d_aMNQ3988H7NhcTEezX3FLQ8TLLf)
+16.1.2022, 20:53:35 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: 9W4d_aMNQ3988H7NhcTEezX3FLQ8TLLf)
+16.1.2022, 20:53:35 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: 9W4d_aMNQ3988H7NhcTEezX3FLQ8TLLf)
+16.1.2022, 20:53:35 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: 9W4d_aMNQ3988H7NhcTEezX3FLQ8TLLf)
+16.1.2022, 20:53:35 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: 9W4d_aMNQ3988H7NhcTEezX3FLQ8TLLf)
+16.1.2022, 20:57:05 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 20:57:09 - DEBUG - auth.service - login with username: demo (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:30 - DEBUG - auth.service - signup with username: 678, fullname: 678 (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:30 - ERROR - user.service - Cannot add user | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:30 - ERROR - auth.controller - Failed to signup | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:43 - DEBUG - auth.service - signup with username: tyu, fullname: tyu (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:43 - ERROR - user.service - Cannot add user | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:43 - ERROR - auth.controller - Failed to signup | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:57:52 - DEBUG - auth.service - login with username: demo (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:59:27 - DEBUG - auth.service - login with username: ghjghj (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:59:50 - DEBUG - auth.service - signup with username: uio, fullname: uio (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:59:50 - ERROR - user.service - Cannot add user | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 20:59:50 - ERROR - auth.controller - Failed to signup | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 21:00:06 - DEBUG - auth.service - signup with username: uiouio, fullname: uiouio (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 21:00:06 - ERROR - user.service - Cannot add user | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 21:00:06 - ERROR - auth.controller - Failed to signup | TypeError: collection.inserOne is not a function (sid: _4BbteNp3WpgyQiVb7T5ZCt3KfJd2J02)
+16.1.2022, 21:01:25 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 21:01:27 - DEBUG - auth.service - signup with username: uiouio, fullname: uiouio (sid: dP4CS3mra0Zwx-elp-kQtbRC1kWv1oTR)
+16.1.2022, 21:01:28 - DEBUG - auth.controller - new account created: {"username":"uiouio","password":"$2b$10$y.whR2tIEP1oXjmzrEG6cOHdGR8PsySgJ1a2/BhJOzGhW4HN5rJpa","fullname":"uiouio","_id":"61e46b88ae9d1a5d630a336f"} (sid: dP4CS3mra0Zwx-elp-kQtbRC1kWv1oTR)
+16.1.2022, 21:01:28 - DEBUG - auth.service - login with username: uiouio (sid: dP4CS3mra0Zwx-elp-kQtbRC1kWv1oTR)
+16.1.2022, 21:10:05 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 21:10:08 - DEBUG - auth.service - login with username: demo (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:08 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:08 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:08 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:08 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:21 - DEBUG - auth.service - signup with username: jkl, fullname: jkl (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:21 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:21 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:21 - ERROR - user.service - Cannot find user jkl | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:23 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:23 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:23 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:23 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: WJOsmOPMCa197kt3GbAAP-WKEI287Zvl)
+16.1.2022, 21:10:31 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 21:10:35 - DEBUG - auth.service - signup with username: jkl, fullname: jkl (sid: BZnzbSskARbkOaYSFHdMhmpNuYXCllaZ)
+16.1.2022, 21:10:36 - DEBUG - auth.controller - new account created: {"username":"jkl","password":"$2b$10$6LlXWtazKc1Tizhi7SWMF.ARwc/hd3pIXbQteZ43E3jSLPD3n0vkO","fullname":"jkl","_id":"61e46dac106407b18536f5a5"} (sid: BZnzbSskARbkOaYSFHdMhmpNuYXCllaZ)
+16.1.2022, 21:10:36 - DEBUG - auth.service - login with username: jkl (sid: BZnzbSskARbkOaYSFHdMhmpNuYXCllaZ)
+16.1.2022, 21:19:13 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 21:19:19 - DEBUG - auth.service - login with username: demo (sid: 5KtuDWlRHaHnQspTpgd7WUuT0e77LTJ8)
+16.1.2022, 21:19:20 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: 5KtuDWlRHaHnQspTpgd7WUuT0e77LTJ8)
+16.1.2022, 21:19:52 - DEBUG - auth.service - signup with username: demo, fullname: wixer demo (sid: 5KtuDWlRHaHnQspTpgd7WUuT0e77LTJ8)
+16.1.2022, 21:19:52 - DEBUG - auth.controller - new account created: {"username":"demo","password":"$2b$10$M2AEclGDi9nsdJ7iH4cJOOzazdY65gcBhVSoHd/wm.GbuK8qHvb42","fullname":"wixer demo","_id":"61e46fd8264c39d43acdd887"} (sid: 5KtuDWlRHaHnQspTpgd7WUuT0e77LTJ8)
+16.1.2022, 21:19:52 - DEBUG - auth.service - login with username: demo (sid: 5KtuDWlRHaHnQspTpgd7WUuT0e77LTJ8)
+16.1.2022, 21:20:44 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 21:20:47 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 22:41:38 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 22:42:00 - DEBUG - auth.service - login with username: demo (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:01 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:01 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:01 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:01 - ERROR - auth.controller - Failed to Login | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:09 - DEBUG - auth.service - signup with username: demo, fullname: s (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - user.service - Cannot find user demo | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - Cannot connect to DB | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - Failed to get Mongo collection | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - user.service - Cannot add user | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
+16.1.2022, 22:42:10 - ERROR - auth.controller - Failed to signup | MongoServerError: bad auth : Authentication failed. (sid: BM6TpvL_XXOvUjVPyVoS-pC5Ak7DjG8m)
