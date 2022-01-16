@@ -439,3 +439,4 @@
 16.1.2022, 13:31:46 - ERROR - wap.service - Cannot finding wap dsdsa | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
 16.1.2022, 13:31:46 - ERROR - wap.controller - Failed to get wap | {} (sid: GrEHWULI6Lq5leFhjDRQjEOhCfc4bQyF)
 16.1.2022, 13:50:11 - INFO - server.js - Server is running on port: 3030 
+16.1.2022, 14:14:15 - INFO - server.js - Server is running on port: 3030 
