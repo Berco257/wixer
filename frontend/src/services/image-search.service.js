@@ -11,7 +11,7 @@ async function query(q) {
       params: {q},
       headers: {
         'x-rapidapi-host': 'bing-image-search1.p.rapidapi.com',
-        'x-rapidapi-key': '4ce722ac1emsh6c4e374c552e3e6p1a6480jsn8f00b62bfdab'
+        'x-rapidapi-key': '<apiKey>'
       }
     };
     
@@ -19,5 +19,6 @@ async function query(q) {
     .then((response) => response.data)
     .catch((error) => {
         console.error(error);
+        return []
     });
 }

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.db0fa12f.chunk.css",
-    "main.js": "/static/js/main.8d836579.chunk.js",
-    "main.js.map": "/static/js/main.8d836579.chunk.js.map",
+    "main.css": "/static/css/main.a33d2ada.chunk.css",
+    "main.js": "/static/js/main.55da8b72.chunk.js",
+    "main.js.map": "/static/js/main.55da8b72.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5fd20452.js",
     "runtime-main.js.map": "/static/js/runtime-main.5fd20452.js.map",
-    "static/js/2.ffa49279.chunk.js": "/static/js/2.ffa49279.chunk.js",
-    "static/js/2.ffa49279.chunk.js.map": "/static/js/2.ffa49279.chunk.js.map",
+    "static/js/2.eac5ad57.chunk.js": "/static/js/2.eac5ad57.chunk.js",
+    "static/js/2.eac5ad57.chunk.js.map": "/static/js/2.eac5ad57.chunk.js.map",
     "static/js/3.5f10752d.chunk.js": "/static/js/3.5f10752d.chunk.js",
     "static/js/3.5f10752d.chunk.js.map": "/static/js/3.5f10752d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.db0fa12f.chunk.css.map": "/static/css/main.db0fa12f.chunk.css.map",
-    "static/js/2.ffa49279.chunk.js.LICENSE.txt": "/static/js/2.ffa49279.chunk.js.LICENSE.txt",
+    "static/css/main.a33d2ada.chunk.css.map": "/static/css/main.a33d2ada.chunk.css.map",
+    "static/js/2.eac5ad57.chunk.js.LICENSE.txt": "/static/js/2.eac5ad57.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/static/media/site-avatar.e5311a02.jpg",
     "static/media/beautycare.bcfaf5c2.jpg": "/static/media/beautycare.bcfaf5c2.jpg",
     "static/media/construction.9ac5272d.jpg": "/static/media/construction.9ac5272d.jpg",
@@ -51,8 +51,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5fd20452.js",
-    "static/js/2.ffa49279.chunk.js",
-    "static/css/main.db0fa12f.chunk.css",
-    "static/js/main.8d836579.chunk.js"
+    "static/js/2.eac5ad57.chunk.js",
+    "static/css/main.a33d2ada.chunk.css",
+    "static/js/main.55da8b72.chunk.js"
   ]
 }

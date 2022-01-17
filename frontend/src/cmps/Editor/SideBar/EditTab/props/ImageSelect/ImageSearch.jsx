@@ -21,7 +21,7 @@ export const ImageSearch = ({ onSelect }) => {
         <div className="image-search">
             <TextField type="text" label="Search images" name="image" variant="outlined" onChange={debouncedChangeHandler} />
             <ul>
-                {images.map(image => (
+                {images && images.map(image => (
                     <li key={`${image.thumbnailUrl}`}>
                         <img src={image.thumbnailUrl} alt="" onClick={() => { onSelect(image.contentUrl) }} />
                     </li>
