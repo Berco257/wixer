@@ -60,18 +60,14 @@ async function add(wap) {
 
 async function update(wap) {
     try {
-        const wapToSave = {
-            ...wap,
-            _id: ObjectId(wap._id)
-        }
-
+        wap._id = ObjectId(wap._id)
         const store = asyncLocalStorage.getStore()
         const { userId } = store
-        if (userId) wapToSave.owner = ObjectId(userId)
+        if (userId) wap.owner = ObjectId(userId)
 
         const collection = await dbService.getCollection('wap')
-        await collection.updateOne({ _id: wapToSave._id }, { $set: wapToSave })
-        return wapToSave
+        await collection.updateOne({ _id: wap._id }, { $set: wap })
+        return wap
     } catch (err) {
         logger.error(`wap.service - Cannot update wap ${wap._id}`, err)
         throw err

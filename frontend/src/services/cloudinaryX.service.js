@@ -1,7 +1,7 @@
 export const uploadImg = (ev) => {
-    const CLOUD_NAME = 'dueosh7bz'
+    const CLOUD_NAME = '<cloudName>'
     const UPLOAD_URL = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`
-    const UPLOAD_PRESET = 'u7muceu6'
+    const UPLOAD_PRESET = '<preset>'
 
     const formData = new FormData();
     formData.append('file', ev.target.files[0])

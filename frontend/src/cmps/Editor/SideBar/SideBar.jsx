@@ -12,7 +12,7 @@ import { TabItems } from './TabItems'
 import { SavePublish } from './SavePublish'
 import { SaveModal } from './SaveModal/SaveModal'
 import { saveWap } from '../../../store/actions/wap.actions'
-import { eventBusService } from '../../../services/event-bus-service'
+import { eventBusService } from '../../../services/eventbus.service'
 
 export const SideBar = ({ selected, updateCmp, onUndo, chat, setChatIsEnabled, setChatTxt }) => {
     const dispatch = useDispatch()

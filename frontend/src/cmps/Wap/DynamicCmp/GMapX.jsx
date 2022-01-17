@@ -21,4 +21,4 @@ const _GMap = ({ style, data, google }) => {
     )
 }
 
-export const GMap = GoogleApiWrapper({ apiKey: ('AIzaSyBj6uH299fNka4OlOEA05hitpszMFv3b1g') })(_GMap)
+export const GMap = GoogleApiWrapper({ apiKey: ('<apiKey>') })(_GMap)

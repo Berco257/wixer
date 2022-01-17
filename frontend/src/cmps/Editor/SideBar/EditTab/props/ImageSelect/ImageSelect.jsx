@@ -1,5 +1,5 @@
 import React from 'react'
-import { uploadImg } from '../../../../../../services/cloudinary-service';
+import { uploadImg } from '../../../../../../services/cloudinary.service';
 import { ImageUpload } from './ImageUpload'
 import { ImageSearch } from './ImageSearch'
 

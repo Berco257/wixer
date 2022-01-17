@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { uploadImg } from '../../../../../../services/cloudinary-service'
+import { uploadImg } from '../../../../../../services/cloudinary.service'
 import { utilService } from '../../../../../../services/util.service'
 import { AddImage } from './AddImage'
 import { Image } from './Image'

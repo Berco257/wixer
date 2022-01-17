@@ -698,3 +698,27 @@
 17.1.2022, 0:03:40 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
 17.1.2022, 0:03:52 - DEBUG - auth.service - login with username: demo (sid: y-N10MGmc05QoJlFkqNnQ8YljkIe30Al)
 17.1.2022, 0:05:06 - INFO - server.js - Server is running on port: 3030 
+17.1.2022, 0:06:53 - INFO - server.js - Server is running on port: 3030 
+17.1.2022, 0:07:03 - INFO - server.js - Server is running on port: 3030 
+17.1.2022, 9:31:19 - INFO - server.js - Server is running on port: 3030 
+17.1.2022, 9:33:05 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:34:01 - ERROR - wap.service - Cannot finding wap ds | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:34:01 - ERROR - wap.controller - Failed to get wap | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:37:03 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:39:33 - ERROR - wap.service - Cannot finding wap 61e51ca5c69f65c3279a60e9 | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:39:33 - ERROR - wap.controller - Failed to get wap | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:47:01 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:54:59 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:57:59 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:58:18 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 9:58:25 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 10:00:31 - DEBUG - auth.service - login with username: demo (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 10:02:27 - ERROR - wap.service - Cannot finding wap bercosite | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 10:02:27 - ERROR - wap.controller - Failed to get wap | {} (sid: OWoNfgGdYgGyO2IL6Y64ieVxzviYD019)
+17.1.2022, 10:06:43 - INFO - server.js - Server is running on port: 3030 
+17.1.2022, 10:07:20 - DEBUG - auth.service - login with username: demoh (sid: jsVSOa089xujlg6HkK7ofZwnZr5hJ9ZF)
+17.1.2022, 10:07:21 - ERROR - auth.controller - Failed to Login | Invalid username or password (sid: jsVSOa089xujlg6HkK7ofZwnZr5hJ9ZF)
+17.1.2022, 10:07:34 - DEBUG - auth.service - signup with username: yui, fullname: yui (sid: jsVSOa089xujlg6HkK7ofZwnZr5hJ9ZF)
+17.1.2022, 10:07:34 - DEBUG - auth.controller - new account created: {"username":"yui","fullname":"yui","_id":"61e523c63d47b9fd5e0263e6"} (sid: jsVSOa089xujlg6HkK7ofZwnZr5hJ9ZF)
+17.1.2022, 10:07:34 - DEBUG - auth.service - login with username: yui (sid: jsVSOa089xujlg6HkK7ofZwnZr5hJ9ZF)
+17.1.2022, 10:20:24 - INFO - server.js - Server is running on port: 3030 
