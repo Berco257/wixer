@@ -11,7 +11,7 @@ async function query(q) {
       params: {q},
       headers: {
         'x-rapidapi-host': 'bing-image-search1.p.rapidapi.com',
-        'x-rapidapi-key': '<apiKey>'
+        'x-rapidapi-key': 'be2ebfe221msh236e608fec2f67ap161213jsnbd87a7367ef1'
       }
     };
     
